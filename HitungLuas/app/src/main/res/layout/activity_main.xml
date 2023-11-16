@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20px"
+        android:text="Rectangle Area Calculation" />
+
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10px"
+        android:text="Enter Length" />
+
+    <EditText
+        android:id="@+id/edtext1"
+        android:layout_toRightOf="@+id/label2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_below="@+id/label2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter breadth" />
+
+    <EditText
+        android:id="@+id/edtext2"
+        android:layout_toRightOf="@+id/label3"
+        android:layout_alignBaseline="@+id/label3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@+id/label3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20px"
+        android:layout_marginTop="58dp"
+        android:text="Area in cm2" />
+
+    <EditText
+        android:id="@+id/edtext3"
+        android:layout_width="54dp"
+        android:layout_height="69dp"
+        android:layout_alignBaseline="@+id/label4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-62dp"
+        android:layout_toRightOf="@+id/label4"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="Clear Entries" />
+
+</RelativeLayout>
